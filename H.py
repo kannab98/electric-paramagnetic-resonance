@@ -18,6 +18,7 @@ def H(x):
     return F(x)
 
 print(H(160))
+print(H(160)-H(164))
 # I = np.array([55, 135])
 # plt.plot(I,H(I),color='darkblue')
 # fontsize = 12
