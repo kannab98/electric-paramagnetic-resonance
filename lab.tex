@@ -84,6 +84,29 @@
     \label{eq:16}
     L_{C} = A P_n \cdot 4 \pi Q \eta \chi''(\omega_{0})
 \end{equation}
+
+Коэффициент заполнения $\eta$ определяется как отношение  двух интегралов вида  $\int H_{1}^2 \dd{\nu}$ по объему образца и резонатора соответственно. В условиях данной ЭПР-установки
+с достаточной степенью точности можно считать 
+\begin{equation}
+    \label{eq:17}
+    \eta \simeq \frac{2 V_{\text{обр}}}{V_{\text{рез}}}.
+\end{equation}
+
+Значение $\chi''$ для малых полей  $H_{1}$ при $\omega = \omega_{0}$ можно записать в виде
+\begin{equation}
+    \label{eq:18}
+    \chi '' (\omega_{0}) = \frac{N_{0} \mu^2}{3KT} \omega_{0} T_2^*
+\end{equation}
+Отсюда количество парамагнитных частиц можно оценить как
+\begin{equation}
+    \label{eq:20}
+    N_0 = 3KT \frac{\chi''(\omega_{0})}{\mu^2 \omega_0 T_2^*}.
+\end{equation}
+Сопоставляя \eqref{eq:16} и \eqref{eq:20} получаем окончательно
+\begin{equation}
+    \label{eq:21}
+    N_0 = \frac{3KT}{8\pi Q \mu^2 \omega_{0} T_2^*} \cdot \frac{L_C}{L_M}  \cdot \frac{P_M}{P_n} \cdot \frac{V_{\text{рез}}}{V_{\text{обр}}}
+\end{equation}
 \section{Экспериментальная часть}%
 
 
@@ -150,7 +173,7 @@
     Q = 5000, \quad \frac{V_{\text{рез}}}{V_{\text{обр}}} \simeq 200, \quad \frac{P_M}{P_n} = 1
 \end{equation}
 
-
+Из эксперимента остается определить собственную частоту резонатора $\omega_{0}$ (нашли в \ref{par:1}.3), время поперечной релаксации $T^*_2$ и отношение  $L_C / L_M$ (нашли двумя параграфами выше). 
 
 % \begin{figure}[h!]
 %     \centering
@@ -161,7 +184,16 @@
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale=1]{example-image-a}
+    \begin{minipage}{0.49\linewidth}
+    \centering    
+    \includegraphics[width=\linewidth]{fig/fig3}
+    \end{minipage}
+\hfill
+    \begin{minipage}{0.49\linewidth}
+        \includegraphics[width=\linewidth]{fig/fig2} 
+    \centering    
+    \end{minipage}
+
     \caption{Кривые $\chi'$ и  $\chi''$ на экране осциллографа}
     \label{fig:3}
 \end{figure}
