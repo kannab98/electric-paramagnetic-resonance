@@ -1,12 +1,5 @@
 import numpy as np
 import scipy
-<<<<<<< Updated upstream
-# import matplotlib.pyplot as plt
-# from matplotlib import rc
-=======
-import matplotlib.pyplot as plt
-from matplotlib import rc
->>>>>>> Stashed changes
 # rc('text', usetex=True)
 # rc('text.latex',preamble = \
 # [
@@ -15,7 +8,6 @@ from matplotlib import rc
 #     r'\usepackage{amssymb}',
 # ])
 # rc('font',family='serif')
-<<<<<<< Updated upstream
 def H(x):
     I = np.array([55, 135]) # мА
     H = np.array([1250,3000]) # Гс
@@ -23,34 +15,20 @@ def H(x):
     F = np.poly1d(f)
     return F(x)
 
-print(H(160))
-print(H(160)-H(164))
-=======
-# def H(x):
-#     I = np.array([55, 135]) # мА
-#     H = np.array([1250,3000]) # Гс
-#     f = np.polyfit(I,H,deg=1)
-#     F = np.poly1d(f)
-#     return F(x)
+# print(H(160))
+# print(H(160)-H(164))
 
-
->>>>>>> Stashed changes
-# I = np.array([55, 135])
-# plt.plot(I,H(I),color='darkblue')
-# fontsize = 12
-# plt.ylabel(r'$I, \text{ мА}$',fontsize = fontsize)
-# plt.xlabel(r'$H, \text{ Гс}$',fontsize = fontsize)
-# plt.grid(which='major',linestyle = '-')
-# plt.grid(which='minor',linestyle = ':')
-# plt.minorticks_on()
-# plt.savefig('fig/fig1.pdf')
-# plt.show()
-<<<<<<< Updated upstream
-=======
 dH = 10
 beta = 927*10**(-23)
 h = 1 * 10**(-27)
 g = 2
-domega = g * beta / h * dH / 10**9
-print(domega)
->>>>>>> Stashed changes
+domega = g * beta / h * dH 
+T2 =  2/domega 
+mu = 1
+T = 300
+omega0 = 9*10**9 * 2*np.pi
+k = 1.380 * 10**(-16)
+N = (3*k*T)/(8*np.pi*Q*mu**2*omega0*T2) * 200 * 2.3 / 84
+
+
+
